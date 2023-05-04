@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(../font/Lobster-Regular.ttf);
+}
+
+main {
+    color: white;
+    font-family: 'lobster';
+}
+
+#BlockPhotoNom {
+    position: relative;
+    width: 300px;
+    top: 100px;
+    left: 10vw;
+    text-align: center;
+    font-size: 32px;
+}
+
+#photo {
+    width: 300px;
+}
