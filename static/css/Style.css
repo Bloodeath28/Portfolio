@@ -5,7 +5,7 @@
 
 main {
     color: white;
-    font-family: 'lobster';
+    font-family: 'lobster',sans-serif;
 }
 
 #BlockPhotoNom {
@@ -15,8 +15,34 @@ main {
     left: 10vw;
     text-align: center;
     font-size: 32px;
+    letter-spacing: 0.06em;
 }
 
 #photo {
     width: 300px;
+    margin-bottom: 20px;
+}
+
+#blockPresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00000060;
+    box-shadow: 1px 1px 25px 20px #00000060;
+    position: relative;
+    border-radius: 20px;
+    width: 600px;
+    height: 240px;
+    left: 55vw;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 30px;
 }
