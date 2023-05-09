@@ -46,3 +46,23 @@ h1 {
 h3 {
     font-size: 30px;
 }
+
+@media ( width < 1400px) {
+    #blockPresentation {
+        left: 45vw;
+    }
+
+    @media ( width < 1150px ) {
+        #blockPresentation {
+            left: 40vw;
+        }
+
+        @media (width < 1000px ) {
+            #blockPresentation, #BlockPhotoNom {
+                position: static;
+                left: 0;
+                margin: 30px auto;
+            }
+        }
+    }
+}

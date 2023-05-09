@@ -8,17 +8,19 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background-image: url(../asset/img/abstract-background-with-a-network-connections-background-design-free-vector.jpg);
 }
 
 /* debut du header */
 
-header, #headerGauche, #bloclLogo {
+#menuDesktop, #headerGauche, #bloclLogo {
     display: flex;
     align-items: center;
 }
 
-header {
+#menuDesktop {
     height: 80px;
     background-color: #17C6ED40;
     justify-content: space-between;
@@ -36,9 +38,114 @@ header {
 }
 
 .lienPage {
+    padding: 0;
     margin: 0 30px;
+    width: 100px;
     font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+/* fin du header debut footer */
+
+footer {
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    height: 50px;
+    color: white;
+    background-color: #17C6ED40;
+    align-items: center;
+    position: relative;
+    top: 17vh;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
     color: white;
 }
 
-/* fin du header */
+/* fin du footer */
+@media (width > 750px) {
+    #headMenuBurger {
+        display: none;
+    }
+}
+
+@media ( width < 750px) {
+    #menuDesktop {
+        display: none;
+    }
+
+    #headMenuBurger {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menuBurger {
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        margin: 20px 20px;
+        overflow: visible;
+        position: relative;
+        z-index: 2;
+      }
+
+    #menuBurger span,
+    #menuBurger span:before,
+    #menuBurger span:after {
+        background: #fff;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    #menuBurger span:before,
+    #menuBurger span:after {
+        content: "";
+    }
+
+    #menuBurger span:before {
+        left: 0px;
+        top: -10px;
+        width: 27px;
+    }
+
+    #menuBurger span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+    }
+
+    #menuBurger span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+    }
+
+    #menuBurger.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+    }
+
+    #menuBurger.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+    }
+
+    #menuBurger.close span:after {
+        top: 0px;
+        left: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+        width: 0;
+    }
+
+}

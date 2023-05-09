@@ -11,18 +11,38 @@
 </head>
 <body>
     <header>
-        <section id="headerGauche">
+        <section id="menuDesktop">
+            <article id="headerGauche">
+                <div id="bloclLogo">
+                    <a href="/index.html">
+                        <img id="logoPersonnel"  src="/static/asset/logo/Logo JCL.svg" alt="logo_personnel">
+                    </a>
+                </div>
+                <a class="lienPage" href="#">Mon CV</a>
+                <a class="lienPage" href="#">Mes projets</a>
+                <a class="lienPage" href="#">Actualité</a>
+            </article>
+            <a class="lienPage" href="#">Contact</a>
+        </section>
+        <section id="headMenuBurger">
             <article id="bloclLogo">
                 <a href="/index.html">
                     <img id="logoPersonnel"  src="/static/asset/logo/Logo JCL.svg" alt="logo_personnel">
                 </a>
             </article>
-            <a class="lienPage" href="#">Mon CV</a>
-            <a class="lienPage" href="#">Mes projets</a>
-            <a class="lienPage" href="#">Actualité</a>
-        </section>
-        <section id="headerDroite">
-            <a class="lienPage" href="#">Contact</a>
+            <article id="lienMenuBurger">
+                <div id="menuBurger">
+                    <span></span>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a class="lienPage" href="#">Mon CV</a></li>
+                        <li><a class="lienPage" href="#">Mes projets</a></li>
+                        <li><a class="lienPage" href="#">Actualité</a></li>
+                        <li><a class="lienPage" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </header>
     <main>
@@ -40,4 +60,5 @@
         <a href="#">Mentions legales</a>
     </footer>
 </body>
+<link rel="stylesheet" href="/static/js/scipt.js">
 </html>
